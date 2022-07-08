@@ -1,0 +1,265 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(48, 46, 58);
+}
+
+.w3_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+}
+
+/* left side  */
+
+.logo {
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.left ul li {
+    padding: 30px 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.left ul li i{
+    font-size: larger;
+}
+
+.left ul li:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* right side */
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0 10px;
+}
+
+
+.darkmodes {
+    display: none;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 77px;
+    left: 56%;
+    padding: 10px;
+    border-radius: 0px 0 10px 10px;
+}
+.darktheme{
+    padding: 5px;
+}
+
+.right_items a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.right_items a:hover {
+    color: white;
+    background-color: #04AA6D;
+}
+
+.w3_icons a {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.w3_icons a i:hover {
+    color: #04AA6D;
+}
+
+.log_in {
+    padding: 12px 40px;
+    border-radius: 30px;
+    color: white;
+    background-color: #04AA6D;
+}
+
+.website {
+    padding: 12px 40px;
+    border-radius: 30px;
+}
+
+.pro {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.pro span {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin-left: 3px;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid black;
+    position: relative;
+    top: -2px;
+    background-color: white;
+}
+
+
+.get_certified {
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: pink;
+}
+
+/* main */
+.main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem
+}
+
+.main_div h4 {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 30px !important;
+    text-decoration: underline;
+}
+
+.main_div h4:hover {
+    color: #04AA6D;
+    cursor: pointer;
+}
+
+.main_div h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+}
+
+.main_div h3 {
+    font-weight: 900;
+    color: palevioletred;
+    margin-top: 30px;
+
+}
+
+.main_div .example {
+    position: relative;
+    width: 60%;
+
+}
+
+.main_div .example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #282A35;
+    border-radius: 25px 0 0 25px;
+    float: left;
+    width: 80%;
+    padding-left: 25px;
+    background: white;
+    border-right: 1px solid #04AA6D;
+    outline: 0;
+}
+
+.main_div .example button {
+    border-radius: 0 25px 25px 0;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #04AA6D;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #282A35;
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/*accordian division */
+.section,.refer_section,.exe_section{
+    background-color: #282A35;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: none;
+}
+.tut_div{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    width: 70%;
+    margin: auto;
+}
+.w3-items{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.section h1,
+.refer_section h1,
+.exe_section h1{
+    color: #fff4a3;
+    margin: 2% 15%;
+    padding-top:40px ;
+}
+.section h2,
+.refer_section h2,
+.exe_section h2{
+    color: #fff4a3;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.section p,
+.refer_section p,
+.exe_section p{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 0%;
+    padding: 40px;
+    cursor: pointer;
+}
+.section p:hover,
+.refer_section p:hover,
+.exe_section p:hover{
+    background-color: white;
+    color: black;
+}
+.w3-items a{
+    color: white;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.w3-items span{
+    font-size: 10px;
+    background-color: #fff4a3;
+    color: black;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
